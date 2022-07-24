@@ -1,0 +1,30 @@
+{
+  "name": "typescript-express-validation-swagger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "schema": "node schemaGenerator.js",
+    "spec": "ts-node swagger.ts",
+    "swagger": "npm run schema && npm run spec",
+    "build": "npm run schema && tsc",
+    "start": "npm run build && node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.8.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "swagger-autogen": "^2.21.5",
+    "swagger-ui-express": "^4.5.0",
+    "typescript-json-schema": "^0.52.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  }
+}
