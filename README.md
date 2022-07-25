@@ -5,6 +5,11 @@ Thats a mouthful isn't it.
 - Validation: The expected input is defined by a schema. If the input does not follow this schema it is rejected (instead of crashing the server)
 - Swagger UI: An automatically generated documentation and testing tool to interface with the api
 
+![Example image](https://i.imgur.com/e2VeQca.png)
+
+
+
+
 ## Usage
 This section will shortly describe your expected development process.
 - Create a schema that you want to receive in `src/types/schemas.ts`
