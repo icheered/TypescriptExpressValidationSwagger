@@ -1,8 +1,12 @@
 import express, { Express, Request, Response } from "express";
 const morgan = require('morgan')
 
+// Create app and add middleware
 const app: Express = express()
-app.use(morgan('tiny'))
+app.use(morgan('tiny'))   // Log requests to console
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
 
 // Ping endpoint
 app.get('/', (req: Request, res: Response) => {

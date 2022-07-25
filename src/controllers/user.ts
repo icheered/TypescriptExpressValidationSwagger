@@ -7,7 +7,7 @@ import { UserPostRequest } from "../types/schemas";
 
 const router: Router = express.Router();
 
-router.post("/user", validateBody(_schema.definitions.UserPostRequest), async (req: RequestBody<UserPostRequest>, res: Response) => {
+router.post("/", validateBody(_schema.definitions.UserPostRequest), async (req: RequestBody<UserPostRequest>, res: Response) => {
     //  #swagger.tags=['endpoint']
     //  #swagger.parameters['body'] = {in: "body", schema: { $ref: "#/schemas/UserPostRequest" }}
 
