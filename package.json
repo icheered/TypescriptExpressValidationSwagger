@@ -5,8 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "schema": "node schemaGenerator.js",
-    "spec": "ts-node swagger.ts",
+    "schema": "node utils/schemaGenerator.js",
+    "spec": "ts-node utils/swagger.ts",
     "swagger": "npm run schema && npm run spec",
     "build": "npm run schema && tsc",
     "start": "npm run build && node ."

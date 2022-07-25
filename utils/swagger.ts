@@ -1,4 +1,4 @@
-import {_schema} from './build/_schema';
+import {_schema} from '../build/_schema';
 const swaggerAutogen = require('swagger-autogen')();
 
 require('dotenv').config()
