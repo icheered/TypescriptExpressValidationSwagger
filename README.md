@@ -17,6 +17,8 @@ This section will shortly describe your expected development process.
 Then to run your project execute the following commands:
 1. `$ npm install       # Install dependencies`
 2. `$ npm run schema    # Turn your schemas into JSON to be used for input validation (result is put in build/_schema.ts)`
-3. `$ npm run swagger   # Generate the Swagger UI definition (result is put in build/swagger.json)`
+3. `$ npm run spec   # Generate the Swagger UI definition (result is put in build/swagger.json)`
+- Alternatively run `$ npm run swagger` to execute both previous commands
 4. `$ npm run dev       # Start the server `
+
 The Swagger UI is accessible on `http://localhost:3000/docs`.
