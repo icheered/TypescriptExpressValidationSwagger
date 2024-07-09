@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: 'pip'
+    directories:
+      - '**/*'
+    schedule:
+      interval: 'daily'
+    groups:
+      production-dependencies:
+        dependency-type: '*'
